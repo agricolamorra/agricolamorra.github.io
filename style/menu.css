@@ -58,7 +58,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: #000;
 }
 
 .menu-voice {
@@ -68,6 +67,7 @@
     width: 60%;
     margin: auto;
     text-decoration: none;
+    color: #000;
 }
 
 .menu-voice:visited {
