@@ -1,0 +1,116 @@
+#menu-page {
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--grey);
+    transition: 0.3s;
+}
+
+#close-btn {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+#close-img {
+    width: 100%;
+}
+
+#close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#menu-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: trnslate(-50%, -50%);
+}
+
+#menu-logo-container {
+    flex: 1;
+    opacity: 0.5;
+    text-align: center;
+}
+
+#menu-logo {
+    width: 100%;
+    height: 100%;
+    max-width: 384px;
+}
+
+#menu-voices {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-voice {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 60%;
+    margin: auto;
+    text-decoration: none;
+}
+
+.menu-voice:visited {
+    color: #000;
+}
+
+.menu-voice:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.voice-text {
+    font-family: "Playfair Display";
+    font-size: 35px;
+    margin: 0;
+}
+
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #menu-page {
+        width: 100vw;
+        height: 0;
+        overflow: hidden;
+        background-color: var(--grey);
+        transition: 0.5s;
+    }
+    #close-btn {
+        left: 20px;
+        width: 50px;
+    }
+    #menu-content {
+        flex-direction: column;
+        gap: 50px;
+        width: 90%;
+    }
+    #menu-voices {
+        width: 100%;
+    }
+    #menu-logo {
+        width: 80%;
+    }
+    .menu-voice {
+        width: 80%;
+    }
+    .voice-text {
+        font-size: 4vh;
+    }
+}

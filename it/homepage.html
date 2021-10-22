@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>Storia, prodotti e contatti</title>
+
+    <link rel="stylesheet" href="../style/homepage.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/info-bar.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/top-bar.css">
+
+    <link rel="icon" href="../images/logo/logo-white-icon.webp">
+
+    <!--font from Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+
+    <meta name="description" content="Scopri la nostra storia, i nostri prodotti e come contattarci se sei interessato ai nostri prodotti">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Homepage, Storia, Prodotti, Prodotti tipici, Contatti, 'Nocciola Piemonte IGP' delle Langhe, Langhe, Nocciole">
+    <meta name="author" content="Pietro Cagnasso">
+
+    <script src="../scripts/menu.js" async></script>
+</head>
+
+<body>
+    <div id="menu-page">
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.webp" alt="closing button"></div>
+        <div id="menu-content">
+            <div id="menu-logo-container">
+                <img id="menu-logo" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra">
+            </div>
+            <div id="menu-voices">
+                <a class="menu-voice" href="./homepage.html">
+                    <p class="voice-text">Homepage</p>
+                </a>
+                <a class="menu-voice" href="./history.html">
+                    <p class="voice-text">La nostra storia</p>
+                </a>
+                <a class="menu-voice" href="./products.html">
+                    <p class="voice-text">I nostri prodotti</p>
+                </a>
+                <a class="menu-voice" href="./contacts.html">
+                    <p class="voice-text">I nostri contatti</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="photo-banner">
+        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.webp" alt="opening button"></div>
+        <div class="lang-selector">
+            <a class="language" href="../en/homepage.html"><img class="language-img" loading="lazy" src="../images/icons/en-white.webp" alt="english language"></a>
+            <a class="language" href="../de/homepage.html"><img class="language-img" loading="lazy" src="../images/icons/de-white.webp" alt="deutchland language"></a>
+        </div>
+        <img id="logo" loading="lazy" src="../images/logo/logo-white.webp" alt="logo Azienda agricola Andreas Morra">
+    </div>
+    <div id="container">
+        <p class="breadcrumb"><b>Homepage</b></p>
+        <hr class="divider">
+        <h1 id="claim">
+            Lavoriamo le nostre terre con dedizione e amore per produrre la "Nocciola Piemonte IGP" delle Langhe, tonda e gentile.
+        </h1>
+        <div class="section right">
+            <div class="description">
+                <h2 class="text">
+                    Per quasi un secolo la nostra storia si è intrecciata con quella di queste magnifiche terre
+                </h2>
+                <a class="redirect" href="./history.html">
+                    <p class="redirect-text">SCOPRI LA NOSTRA STORIA</p>
+                </a>
+            </div>
+            <div class="icon">
+                <img id="history" loading="lazy" src="../images/homepage/history-icon.webp" alt="la casa vista da lontano con alle spalle il paese, bianco e nero, icona">
+            </div>
+        </div>
+        <div class="section left">
+            <div class="icon">
+                <img id="products" loading="lazy" src="../images/homepage/products-icon.webp" alt="nocciola in un cesto di vimini con fiori gialli, icona">
+            </div>
+            <div class="description">
+                <h2 class="text">
+                    Portiamo dai nostri campi alla vostra tavola i gusti e gli aromi tipici di queste colline
+                </h2>
+                <a class="redirect" href="./products.html">
+                    <p class="redirect-text">SCOPRI I NOSTRI PRODOTTI</p>
+                </a>
+            </div>
+        </div>
+        <div class="contacts">
+            <p class="text">Qualche nostro prodotto ti interessa o vuoi avere maggiori informazioni?</p>
+            <a class="redirect" href="./contacts.html">
+                <p class="redirect-text">SCOPRI TUTTI I NOSTRI CONTATTI</p>
+            </a>
+        </div>
+    </div>
+    <hr class="divider">
+    <div id="info">
+        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra"></div>
+        <div id="legal-info">
+            <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
+            <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
+        </div>
+        <div id="contact-info">
+            <p>Tel.: +39-3279947784 | Rif. comm.: +39-3331601545</p>
+            <p>e-mail: a.agricolamorra@gmail.com</p>
+            <p>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.webp" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
+                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.webp" alt="instagram logo, link alla nostra pagina"></a>
+            </p>
+        </div>
+    </div>
+    <div id="dev-info">
+        <p>Copyright 2021 - Tutti i diritti riservati | Realizzato da Pietro Cagnasso | Foto di Giacomo Gatto</p>
+    </div>
+</body>
+
+</html>

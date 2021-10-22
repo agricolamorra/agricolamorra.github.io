@@ -1,0 +1,95 @@
+#photo-banner {
+    background-image: url('../images/contacts/home-from-fields.webp');
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    font-family: 'Playfair Dispaly';
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    bottom: 5%;
+    color: white;
+}
+
+#large-contact-info {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/contacts/home-from-fields-mobile.webp');
+    }
+    #title {
+        position: absolute;
+        width: 100%;
+        font-family: 'Playfair Dispaly';
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        bottom: 5%;
+        color: white;
+    }
+    #title {
+        font-size: 75px;
+    }
+    .right .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .left .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .right {
+        flex-direction: column;
+    }
+    .left {
+        flex-direction: column-reverse;
+    }
+    .section .text {
+        text-align: center;
+    }
+    #nineties {
+        max-height: none;
+        width: 100%;
+    }
+    .slideshow {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: relative;
+        bottom: 20px;
+        height: 60vh;
+    }
+    .slide {
+        display: none;
+        height: 90%;
+        margin-bottom: 5px;
+    }
+    .slide img {
+        width: auto;
+        height: 100%;
+        object-fit: scale-down;
+    }
+    .slide-caption-container {
+        text-align: center;
+        padding: 2px 16px;
+        border: 2px solid #42321e;
+        height: auto;
+    }
+    .prev,
+    .next {
+        width: 30px;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+    }
+    p#slide-caption {
+        font-size: 35px;
+    }
+}

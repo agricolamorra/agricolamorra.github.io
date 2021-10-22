@@ -1,0 +1,137 @@
+#photo-banner {
+    background-image: url('../images/products/hazelnuts-flowers.webp');
+}
+
+#igp-logo-sx {
+    width: 200px;
+    height: auto;
+    margin: auto;
+}
+
+#igp-logo-dx {
+    width: 200px;
+    height: auto;
+    margin: auto;
+}
+
+.icon {
+    margin: auto;
+    text-align: center;
+    flex: 2;
+    padding: 10px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.icon p {
+    font-family: 'Playfair Display';
+}
+
+#guscio {
+    max-height: 450px;
+    width: auto;
+}
+
+#olio {
+    max-height: 450px;
+    width: auto;
+}
+
+.description {
+    margin: auto;
+    flex: 3;
+    padding: 10px;
+}
+
+.text {
+    margin: 0;
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.text-description {
+    text-align: center;
+    font-size: 22px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+.redirect {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 60%;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
+}
+
+.redirect:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.redirect:visited {
+    color: #000;
+}
+
+.redirect-text {
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+}
+
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/products/hazelnuts-flowers-mobile.webp');
+    }
+    #title {
+        position: absolute;
+        width: 100%;
+        font-family: 'Playfair Dispaly';
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        bottom: 5%;
+        color: white;
+    }
+    #title {
+        font-size: 75px;
+    }
+    #igp-logo-sx {
+        display: none;
+    }
+    #igp-logo-dx {
+        width: 400px;
+    }
+    .igp {
+        flex-direction: column;
+    }
+    #guscio {
+        max-height: none;
+        width: 100%;
+    }
+    #olio {
+        max-height: none;
+        width: 100%;
+    }
+    .right {
+        flex-direction: column;
+    }
+    .left {
+        flex-direction: column-reverse;
+    }
+    .section .text {
+        text-align: center;
+    }
+    .redirect-text {
+        font-size: 2.5vh;
+    }
+}

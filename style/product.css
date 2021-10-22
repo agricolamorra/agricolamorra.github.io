@@ -1,0 +1,96 @@
+#photo-banner {
+    background-image: url('../images/products/all-products.webp');
+}
+
+#title {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 35px;
+    margin: 0;
+    margin: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#image {
+    flex: 2;
+}
+
+#photo {
+    width: 100%;
+}
+
+#description {
+    margin: auto;
+    flex: 3;
+    font-size: 22px;
+    text-align: justify;
+}
+
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/products/all-products-mobile.webp');
+    }
+    #title {
+        font-size: 75px;
+    }
+    #content {
+        flex-direction: column-reverse;
+    }
+    .right .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .left .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .right {
+        flex-direction: column;
+    }
+    .left {
+        flex-direction: column-reverse;
+    }
+    .section .text {
+        text-align: center;
+    }
+    .slideshow {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: relative;
+        bottom: 20px;
+        height: 60vh;
+    }
+    .slide {
+        display: none;
+        height: 90%;
+        margin-bottom: 5px;
+    }
+    .slide img {
+        width: auto;
+        height: 100%;
+        object-fit: scale-down;
+    }
+    .slide-caption-container {
+        text-align: center;
+        padding: 2px 16px;
+        border: 2px solid #42321e;
+        height: auto;
+    }
+    .prev,
+    .next {
+        width: 30px;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+    }
+    p#slide-caption {
+        font-size: 35px;
+    }
+}

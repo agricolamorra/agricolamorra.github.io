@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>I nostri prodotti - Azienda Agricola Andreas Morra</title>
+
+    <link rel="stylesheet" href="../style/products.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/info-bar.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/top-bar.css">
+
+    <link rel="icon" href="../images/logo/logo-white-icon.webp">
+
+    <!--font from Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Presentazione dei nostri prodotti, tutti con ingrediente principale la nostra 'Nocciola Piemonte IGP' delle Langhe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Prodotti, Prodotti tipici, Langhe, 'Nocciola Piemonte IGP' delle Langhe, Nocciole tostate, Nocciole in guscio, Crema gianduia, Tegole di nocciole, Olio di nocciola">
+    <meta name="author" content="Pietro Cagnasso">
+
+    <script src="../scripts/menu.js" async></script>
+</head>
+
+<body>
+    <div id="menu-page">
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.webp" alt="closing button"></div>
+        <div id="menu-content">
+            <div id="menu-logo-container">
+                <img id="menu-logo" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra">
+            </div>
+            <div id="menu-voices">
+                <a class="menu-voice" href="./homepage.html">
+                    <p class="voice-text">Homepage</p>
+                </a>
+                <a class="menu-voice" href="./history.html">
+                    <p class="voice-text">La nostra storia</p>
+                </a>
+                <a class="menu-voice" href="./products.html">
+                    <p class="voice-text">I nostri prodotti</p>
+                </a>
+                <a class="menu-voice" href="./contacts.html">
+                    <p class="voice-text">I nostri contatti</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="photo-banner">
+        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.webp" alt="opening button"></div>
+        <a id="home" href="./homepage.html"><img id="home-img" loading="lazy" src="../images/logo/logo-white-no-words.webp" alt="logo Azienda agricola Andreas Morra"></a>
+        <div class="lang-selector">
+            <a class="language" href="../en/products.html"><img class="language-img" loading="lazy" src="../images/icons/en-white.webp" alt="english language"></a>
+            <a class="language" href="../de/products.html"><img class="language-img" loading="lazy" src="../images/icons/de-white.webp" alt="deutchland language"></a>
+        </div>
+        <div id="title-container">
+            <p id="title">I PRODOTTI</p>
+        </div>
+    </div>
+    <div id="container">
+        <p class="breadcrumb"><a class="link" href="./homepage.html">Homepage</a> &middot; <b>Prodotti</b></p>
+        <hr class="divider">
+        <div class="section igp">
+            <img id="igp-logo-sx" loading="lazy" src="../images/products/igp.webp" alt="simbolo Indicazione di Geografica Protetta IGP">
+            <h1 id="claim" style="margin: auto;">Ognuno dei nostri prodotti ha come ingrediente primario la nostra "Nocciola Piemonte IGP" delle Langhe.</h1>
+            <img id="igp-logo-dx" loading="lazy" src="../images/products/igp.webp" alt="simbolo Indicazione di Geografica Protetta IGP">
+        </div>
+        <hr class="divider">
+        <div class="section right">
+            <div class="description">
+                <h2 class="text">
+                    Crema gianduia
+                </h2>
+                <p class="text-description">
+                    Crema spalmabile ad elevato contenuto di "Nocciola Piemonte IGP" delle Langhe.<br> PRODOTTO SENZA GLUTINE.
+                </p>
+                <a class="redirect" href="./crema.html">
+                    <p class="redirect-text">SCOPRI DI PIÙ</p>
+                </a>
+            </div>
+            <div class="icon">
+                <img id="crema" loading="lazy" src="../images/products/crema-icon.webp" alt="presentazione della crema di gianduia, icona">
+            </div>
+        </div>
+        <div class="section left">
+            <div class="icon">
+                <img id="guscio" loading="lazy" src="../images/products/guscio-icon.webp" alt="presentazione delle nocciole in guscio, icona">
+            </div>
+            <div class="description">
+                <h2 class="text">
+                    Nocciole in guscio
+                </h2>
+                <p class="text-description">
+                    "Nocciola Piemonte IGP" delle Langhe selezionata ed essiccata in modo naturale.
+                </p>
+                <a class="redirect" href="./guscio.html">
+                    <p class="redirect-text">SCOPRI DI PIÙ</p>
+                </a>
+            </div>
+        </div>
+        <div class="section right">
+            <div class="description">
+                <h2 class="text">
+                    Nocciole tostate
+                </h2>
+                <p class="text-description">
+                    "Nocciola Piemonte IGP" delle Langhe selezionata e confezionata sottovuoto.
+                </p>
+                <a class="redirect" href="./tostate.html">
+                    <p class="redirect-text">SCOPRI DI PIÙ</p>
+                </a>
+            </div>
+            <div class="icon">
+                <img id="tostate" loading="lazy" src="../images/products/tostate-icon.webp" alt="presentazione delle nocciole tostate, icona">
+            </div>
+        </div>
+        <div class="section left">
+            <div class="icon">
+                <img id="olio" loading="lazy" src="../images/products/olio-icon.webp" alt="presentazione dell'olio di nocciola, icona">
+            </div>
+            <div class="description">
+                <h2 class="text">
+                    Olio di nocciola
+                </h2>
+                <p class="text-description">
+                    Olio ottenuto da "Nocciola Piemonte IGP" delle Langhe pressata a freddo.
+                </p>
+                <a class="redirect" href="./olio.html">
+                    <p class="redirect-text">SCOPRI DI PIÙ</p>
+                </a>
+            </div>
+        </div>
+        <div class="section right">
+            <div class="description">
+                <h2 class="text">
+                    Tegole di nocciole
+                </h2>
+                <p class="text-description">
+                    Biscotto ad elevato contenuto di "Nocciola Piemonte IGP" delle Langhe. <br> PRODOTTO SENZA GLUTINE.
+                </p>
+                <a class="redirect" href="./tegole.html">
+                    <p class="redirect-text">SCOPRI DI PIÙ</p>
+                </a>
+            </div>
+            <div class="icon">
+                <img id="tegole" loading="lazy" src="../images/products/tegole-icon.webp" alt="presentazione delle tegole di nocciola, icona">
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div id="info">
+        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra"></div>
+        <div id="legal-info">
+            <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
+            <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
+        </div>
+        <div id="contact-info">
+            <p>Tel.: +39-3279947784 | Rif. comm.: +39-3331601545</p>
+            <p>e-mail: a.agricolamorra@gmail.com</p>
+            <p>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.webp" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
+                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.webp" alt="instagram logo, link alla nostra pagina"></a>
+            </p>
+        </div>
+    </div>
+    <div id="dev-info">
+        <p>Copyright 2021 - Tutti i diritti riservati | Realizzato da Pietro Cagnasso | Foto di Giacomo Gatto</p>
+    </div>
+</body>
+
+</html>
