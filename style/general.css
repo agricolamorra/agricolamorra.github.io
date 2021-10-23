@@ -114,7 +114,7 @@ body {
 }
 
 @media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
+(min-resolution: 200dpi) and (orientation: portrait) {
     body {
         overflow-x: hidden;
     }

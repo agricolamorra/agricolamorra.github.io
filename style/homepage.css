@@ -87,7 +87,36 @@
     color: #000;
 }
 
-@media (min-resolution: 300dpi){
+@media (max-aspect-ratio: 3/4), (min-resolution: 200dpi) and (orientation: landscape){
+    .right {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .left {
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .section .text {
+        text-align: center;
+    }
+    .redirect {
+        width: 90%;
+    }
+    .contacts .redirect {
+        width: 90%;
+    }
+    .redirect-text {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-resolution: 200dpi) and (orientation: portrait){
+    #photo-banner {
+        background-image: url('../images/homepage/home-and-fields-mobile.webp');
+    }
+    #logo {
+        width: 75%;
+    }
     .right {
         -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
@@ -104,17 +133,5 @@
     }
     .contacts .redirect {
         width: 90%;
-    }
-}
-
-@media (min-resolution: 300dpi) and (orientation: portrait){
-    #photo-banner {
-        background-image: url('../images/homepage/home-and-fields-mobile.webp');
-    }
-    #logo {
-        width: 75%;
-    }
-    .redirect-text {
-        font-size: 2vh;
     }
 }

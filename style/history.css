@@ -179,7 +179,16 @@
     opacity: 0.4;
 }
 
-@media (min-resolution: 300dpi) {
+@media (max-aspect-ratio: 3/4), (min-resolution: 200dpi) and (orientation: portrait){ 
+    #photo-banner {
+        background-image: url('../images/history/home-and-village-bw-mobile.webp');
+    }
+    .slideshow {
+        height: 60vh;
+    }
+    p#slide-caption {
+        font-size: 2vh;
+    }
     #title {
         position: absolute;
         width: 100%;
@@ -237,30 +246,80 @@
     }
     .prev,
     .next {
-        width: 30px;
+        width: 3%;
         font-size: 30px;
         text-align: center;
         margin: auto;
     }
 }
 
-@media (min-resolution: 300dpi) and (orientation: portrait){ 
-    #photo-banner {
-        background-image: url('../images/history/home-and-village-bw-mobile.webp');
-    }
-    .slideshow {
-        height: 60vh;
-    }
-    p#slide-caption {
-        font-size: 2vh;
-    }
-}
-
-@media (min-resolution: 300dpi) and (orientation: landscape){ 
+@media (min-resolution: 200dpi) and (orientation: landscape){ 
     .slideshow {
         height: 95vh;
     }
     p#slide-caption {
         font-size: 2vw;
+    }
+    #title {
+        position: absolute;
+        width: 100%;
+        font-family: 'Playfair Dispaly';
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        bottom: 5%;
+        color: white;
+    }
+    #title {
+        font-size: 75px;
+    }
+    .right .description h1 {
+        text-align: center;
+        font-size: 4vh;
+    }
+    .left .description h1 {
+        text-align: center;
+        font-size: 4vh;
+    }
+    .right {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .left {
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+    }
+    .section .text {
+        text-align: center;
+    }
+    .slideshow {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: relative;
+        bottom: 20px;
+    }
+    .slide {
+        display: none;
+        height: 90%;
+        margin-bottom: 5px;
+    }
+    .slide img {
+        width: auto;
+        height: 100%;
+        object-fit: scale-down;
+    }
+    .slide-caption-container {
+        text-align: center;
+        padding: 2px 16px;
+        border: 2px solid #42321e;
+        height: auto;
+    }
+    .prev,
+    .next {
+        width: 3%;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
     }
 }

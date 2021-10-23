@@ -39,7 +39,7 @@
     text-align: justify;
 }
 
-@media (min-resolution: 300dpi) {
+@media (max-aspect-ratio: 3/4), (min-resolution: 200dpi) {
     #title {
         font-size: 75px;
     }
@@ -65,13 +65,13 @@
     }
 }
 
-@media (min-resolution: 300dpi) and (orientation: portrait) {
+@media (min-resolution: 200dpi) and (orientation: portrait) {
     #photo-banner {
         background-image: url('../images/products/all-products-mobile.webp');
     }
 }
 
-@media (min-resolution: 300dpi) and (orientation: landscape) {
+@media (min-resolution: 200dpi) and (orientation: landscape) {
     #photo {
         width: 60%;
     }
