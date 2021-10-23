@@ -4,6 +4,7 @@
     top: 20px;
     cursor: pointer;
     display: flex;
+    display: -webkit-flex;
     border-radius: 5px;
     transition: 0.5s;
     width: 50px;
@@ -31,7 +32,9 @@
     right: 20px;
     top: 20px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     gap: 10px;
 }
 

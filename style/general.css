@@ -47,6 +47,8 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
@@ -130,5 +132,6 @@ body {
     }
     #title {
         font-size: 5vh;
+        bottom: 10%;
     }
 }

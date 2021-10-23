@@ -31,25 +31,25 @@
 #thrities {
     max-height: 500px;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 #sixtiess {
     max-height: 500px;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 #nineties {
     max-height: 500px;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 #today {
     max-height: 500px;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 .description {
@@ -60,7 +60,9 @@
 
 .section {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
 }
 
 .description h2 {
@@ -162,7 +164,9 @@
 .thumbnails {
     position: relative;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
 }
 
 .thumbnail {
@@ -175,11 +179,7 @@
     opacity: 0.4;
 }
 
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    #photo-banner {
-        background-image: url('../images/history/home-and-village-bw-mobile.webp');
-    }
+@media (min-resolution: 300dpi) {
     #title {
         position: absolute;
         width: 100%;
@@ -203,16 +203,14 @@
     }
     .right {
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
     .left {
         flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
     }
     .section .text {
         text-align: center;
-    }
-    #nineties {
-        max-height: none;
-        width: 100%;
     }
     .slideshow {
         width: 100%;
@@ -220,7 +218,6 @@
         transform: translate(-50%, 0);
         position: relative;
         bottom: 20px;
-        height: 60vh;
     }
     .slide {
         display: none;
@@ -245,7 +242,25 @@
         text-align: center;
         margin: auto;
     }
+}
+
+@media (min-resolution: 300dpi) and (orientation: portrait){ 
+    #photo-banner {
+        background-image: url('../images/history/home-and-village-bw-mobile.webp');
+    }
+    .slideshow {
+        height: 60vh;
+    }
     p#slide-caption {
         font-size: 2vh;
+    }
+}
+
+@media (min-resolution: 300dpi) and (orientation: landscape){ 
+    .slideshow {
+        height: 95vh;
+    }
+    p#slide-caption {
+        font-size: 2vw;
     }
 }

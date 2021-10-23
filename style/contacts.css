@@ -46,9 +46,11 @@
         font-size: 50px;
     }
     .right {
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
     .left {
+        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
     .section .text {

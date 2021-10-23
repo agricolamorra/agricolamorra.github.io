@@ -12,16 +12,24 @@
 
 #content {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     gap: 20px;
 }
 
 #image {
     flex: 2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #photo {
     width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 #description {
@@ -31,16 +39,13 @@
     text-align: justify;
 }
 
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    #photo-banner {
-        background-image: url('../images/products/all-products-mobile.webp');
-    }
+@media (min-resolution: 300dpi) {
     #title {
         font-size: 75px;
     }
     #content {
         flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
     }
     .right .description h1 {
         text-align: center;
@@ -52,45 +57,22 @@
     }
     .right {
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
     .left {
+        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
-    .section .text {
-        text-align: center;
+}
+
+@media (min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/products/all-products-mobile.webp');
     }
-    .slideshow {
-        width: 100%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        position: relative;
-        bottom: 20px;
-        height: 60vh;
-    }
-    .slide {
-        display: none;
-        height: 90%;
-        margin-bottom: 5px;
-    }
-    .slide img {
-        width: auto;
-        height: 100%;
-        object-fit: scale-down;
-    }
-    .slide-caption-container {
-        text-align: center;
-        padding: 2px 16px;
-        border: 2px solid #42321e;
-        height: auto;
-    }
-    .prev,
-    .next {
-        width: 30px;
-        font-size: 30px;
-        text-align: center;
-        margin: auto;
-    }
-    p#slide-caption {
-        font-size: 35px;
+}
+
+@media (min-resolution: 300dpi) and (orientation: landscape) {
+    #photo {
+        width: 60%;
     }
 }

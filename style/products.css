@@ -60,7 +60,9 @@
 
 .section {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
 }
 
 .redirect {
@@ -87,11 +89,7 @@
     margin: 0;
 }
 
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    #photo-banner {
-        background-image: url('../images/products/hazelnuts-flowers-mobile.webp');
-    }
+@media (min-resolution: 300dpi){
     #title {
         position: absolute;
         width: 100%;
@@ -108,11 +106,9 @@
     #igp-logo-sx {
         display: none;
     }
-    #igp-logo-dx {
-        width: 400px;
-    }
     .igp {
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
     #guscio {
         max-height: none;
@@ -124,12 +120,24 @@
     }
     .right {
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
     .left {
         flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
     }
     .section .text {
         text-align: center;
+    }
+}
+
+@media (min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/products/hazelnuts-flowers-mobile.webp');
+    }
+    #igp-logo-dx {
+        width: 80%;
+        height: auto;
     }
     .redirect-text {
         font-size: 2.5vh;

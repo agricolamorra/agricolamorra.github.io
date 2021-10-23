@@ -5,5 +5,5 @@ function openMenu() {
 
 function closeMenu() {
     document.getElementById("menu-page").style.height = "0";
-    document.body.style.overflow = 'overlay';
+    document.body.style.overflow = 'auto';
 }

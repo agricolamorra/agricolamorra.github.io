@@ -4,7 +4,7 @@
 
 #logo {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 25%;
@@ -30,7 +30,9 @@
 }
 
 .section {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
 }
 
@@ -85,18 +87,13 @@
     color: #000;
 }
 
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    #photo-banner {
-        background-image: url('../images/homepage/home-and-fields-mobile.webp');
-    }
-    #logo {
-        width: 75%;
-    }
+@media (min-resolution: 300dpi){
     .right {
+        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
     .left {
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
     .section .text {
@@ -105,10 +102,19 @@
     .redirect {
         width: 90%;
     }
-    .redirect-text {
-        font-size: 2vh;
-    }
     .contacts .redirect {
         width: 90%;
+    }
+}
+
+@media (min-resolution: 300dpi) and (orientation: portrait){
+    #photo-banner {
+        background-image: url('../images/homepage/home-and-fields-mobile.webp');
+    }
+    #logo {
+        width: 75%;
+    }
+    .redirect-text {
+        font-size: 2vh;
     }
 }
