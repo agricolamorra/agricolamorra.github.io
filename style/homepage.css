@@ -131,6 +131,9 @@
     .redirect {
         width: 90%;
     }
+    .redirect-text {
+        font-size: 2.5vh;
+    }
     .contacts .redirect {
         width: 90%;
     }
