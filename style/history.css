@@ -30,25 +30,25 @@
 
 #thrities {
     max-height: 500px;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
 #sixtiess {
     max-height: 500px;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
 #nineties {
     max-height: 500px;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 #today {
     max-height: 500px;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -63,6 +63,10 @@
     display: -webkit-flex;
     flex-direction: row;
     -webkit-flex-direction: row;
+}
+
+.section .icon img{
+    transition-duration: 100ms;
 }
 
 .description h2 {
