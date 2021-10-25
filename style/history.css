@@ -21,7 +21,8 @@
 }
 
 .icon img {
-    width: 100%;
+    -webkit-transition: opacity .5s linear 0.2s;
+    transition: opacity .5s linear 0.2s;
 }
 
 .icon p {
@@ -29,25 +30,21 @@
 }
 
 #thrities {
-    max-height: 500px;
     height: auto;
     width: 100%;
 }
 
 #sixtiess {
-    max-height: 500px;
     height: auto;
     width: 100%;
 }
 
 #nineties {
-    max-height: 500px;
     height: 100%;
     width: auto;
 }
 
 #today {
-    max-height: 500px;
     height: auto;
     width: 100%;
 }
@@ -65,10 +62,6 @@
     -webkit-flex-direction: row;
 }
 
-.section .icon img{
-    -webkit-transition: opacity .5s linear 0.2s;
-    transition: opacity .5s linear 0.2s;
-}
 
 .description h2 {
     font-family: 'Playfair Display';
