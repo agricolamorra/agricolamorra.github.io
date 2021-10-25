@@ -66,7 +66,8 @@
 }
 
 .section .icon img{
-    transition-duration: 100ms;
+    -webkit-transition: opacity .5s linear 0.2s;
+    transition: opacity .5s linear 0.2s;
 }
 
 .description h2 {
