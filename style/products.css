@@ -39,6 +39,11 @@
     width: auto;
 }
 
+#torta {
+    max-height: 450px;
+    width: auto;
+}
+
 .description {
     margin: auto;
     flex: 3;
