@@ -39,6 +39,11 @@
     width: auto;
 }
 
+#nuvolotte {
+    max-height: 450px;
+    width: auto;
+}
+
 #torta {
     max-height: 450px;
     width: auto;
@@ -123,6 +128,10 @@
         max-height: none;
         width: 100%;
     }
+    #nuvolotte {
+        max-height: none;
+        width: 100%;
+    }
     .right {
         flex-direction: column;
         -webkit-flex-direction: column;
@@ -172,6 +181,10 @@
         width: 100%;
     }
     #olio {
+        max-height: none;
+        width: 100%;
+    }
+    #nuvolotte {
         max-height: none;
         width: 100%;
     }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
-    <title>Vakuum geröstete Haselnüsse - Azienda agricola Andreas Morra</title>
+    <title>Gift boxes - Azienda agricola Andreas Morra</title>
 
     <link rel="stylesheet" href="../style/product.css">
     <link rel="stylesheet" href="../style/general.css">
@@ -19,35 +19,20 @@
         as="style" onload="this.rel='stylesheet'">
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="description" content="'Nocciola Piemonte IGP' aus Langhe geröstet, ausgewählt und vakuumverpackt">
+    <meta name="description" content="Gift boxes from Azienda agricola Andreas Morra">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-        content="'Nocciola Piemonte IGP' der Langhe, Haselnuss, Geröstete Haselnuss, Langhe, Produkt, Typisches Produkt, Typisches Produkt der Langhe">
+        content="'Nocciola Piemonte IGP' from the Langhe region, Gianduia cream, Toasted hazelnuts, Hazelnuts' oil, Hazelnuts tegole buscuits, Hazelnuts biscuits, Hazelnuts cake, Chocolate, Langhe, Typical product from Langhe">
     <meta name="author" content="Pietro Cagnasso">
 
     <script src="../scripts/menu.js" async></script>
-
-    <script type="application/ld+json" async>
-        {
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            "name": "Geröstete Haselnüsse",
-            "image": [
-                "../images/products/tostate.webp"
-            ],
-            "description": "'Nocciola Piemonte IGP' aus Langhe geröstet, ausgewählt und vakuumverpackt",
-            "brand": {
-                "@type": "Brand",
-                "name": "Azienda agricola Andreas Morra"
-            }
-        }
-    </script>
+    <script src="../scripts/presents.js" async></script>
 </head>
 
-<body>
+<body onload="window.setTimeout(function(){changeSlide(1000, 0);}, 0);">
     <div id="menu-page">
-        <div id="close-btn" onclick="closeMenu()"><img id="close-img" loading="lazy"
-                src="../images/icons/close-black.webp" alt="closing button"></div>
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.webp"
+                alt="closing button"></div>
         <div id="menu-content">
             <div id="menu-logo-container">
                 <img id="menu-logo" src="../images/logo/logo-black-no-words.webp"
@@ -58,13 +43,13 @@
                     <p class="voice-text">Homepage</p>
                 </a>
                 <a class="menu-voice" href="./history.html">
-                    <p class="voice-text">Unsere Geschichte</p>
+                    <p class="voice-text">Our history</p>
                 </a>
                 <a class="menu-voice" href="./products.html">
-                    <p class="voice-text">Unsere Produkte</p>
+                    <p class="voice-text">Our Products</p>
                 </a>
                 <a class="menu-voice" href="./contacts.html">
-                    <p class="voice-text">Unsere Kontakte</p>
+                    <p class="voice-text">Our contacts</p>
                 </a>
             </div>
         </div>
@@ -75,38 +60,41 @@
         <a id="home" href="./homepage.html"><img id="home-img" loading="lazy"
                 src="../images/logo/logo-white-no-words.webp" alt="logo Azienda agricola Andreas Morra"></a>
         <div class="lang-selector">
-            <a class="language" href="../it/tostate.html"><img class="language-img" loading="lazy"
-                    src="../images/icons/it-white.webp" alt="italian language"></a>
-            <a class="language" href="../en/tostate.html"><img class="language-img" loading="lazy"
-                    src="../images/icons/en-white.webp" alt="english language"></a>
+            <a class="language" href="../it/presents.html"><img class="language-img" src="../images/icons/it-white.webp"
+                    alt="italian language"></a>
+            <a class="language" href="../de/presents.html"><img class="language-img" src="../images/icons/de-white.webp"
+                    alt="deutchland language"></a>
         </div>
         <div id="title-container">
-            <p id="title">GERÖSTETE HASELNÜSSE</p>
+            <p id="title">GIFT BOXES</p>
         </div>
     </div>
+
+    <!-- Grazie Sus :) -->
+
     <div id="container">
-        <p class="breadcrumb"><a class="link" href="./homepage.html">Homepage</a> &middot; <a class="link"
-                href="./products.html">Produkte</a> &middot; <b>Geröstete Haselnüsse</b></p>
+        <p class="breadcrumb"><a class="link" href="./homepage.html">Homepage</a> &middot; <b>Gift boxes</b></p>
         <hr class="divider">
-        <div id="content">
-            <div id="image">
-                <img id="photo" loading="lazy" src="../images/products/tostate.webp"
-                    alt="roasted hazelnuts Azienda agricola Andreas Morra">
-            </div>
-            <div id="description">
-                <p>
-                    Ausgewählte 'Nocciola Pimeonte IGP' aus den Langhe, von gleicher Größe und leicht geröstet, um das
-                    typische Aroma und den Geschmack der Region zu erhalten.<br><br> ZUTATEN: <br> 100% "<b>Nocciola</b>
-                    Piemonte IGP" aus den Langhe.
-                    <br><br>NETTOGEWICHT: <br> Vakuumverpackte Packung von <b>1 kg</b><br> Vakuumverpackte Packung von
-                    <b>200 g</b>.
-                </p>
-                <a id="contattaci" style="text-decoration: none;" href="./presents.html">
-                    <p id="contattaci-text">Schauen Sie sich unsere Geschenkverpackungen an!</p>
-                </a>
-            </div>
+        <div id="description">
+            <p>
+                Would you like to share our delicacies with friends, colleagues, and family? Upon request, <b>we prepare
+                    beautiful gift packages</b> suitable for any occasion. Whether you want to make a corporate gift, a
+                delicious treat for a friend’s birthday, or a Christmas gift, we are at your disposal to create the
+                perfect gift package. Don't hesitate to contact us!
+            </p>
+            <a id="contattaci" style="text-decoration: none;" href="./contacts.html">
+                <p id="contattaci-text">Click here to contact us!</p>
+            </a>
+        </div>
+        <div id="slideshow">
+            <img class="slide" loading="lazy" src="../images/presents/present1.webp" alt="Gift box 1">
+            <img class="slide" loading="lazy" src="../images/presents/present2.webp" alt="Gift box 2">
+            <img class="slide" loading="lazy" src="../images/presents/present3.webp" alt="Gift box 3">
+            <img class="slide" loading="lazy" src="../images/presents/present4.webp" alt="Gift box 4">
+            <img class="slide" loading="lazy" src="../images/presents/present5.webp" alt="Gift box 5">
         </div>
     </div>
+
     <hr class="divider">
     <div id="info">
         <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.webp"
@@ -116,7 +104,7 @@
             <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
         </div>
         <div id="contact-info">
-            <p>Telefon: +39-3279947784 | Komm. Ref.: +39-3331601545</p>
+            <p>Phone: +39-3279947784 | Comm. Ref: +39-3331601545</p>
             <p>e-mail: a.agricolamorra@gmail.com</p>
             <p>
                 <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy"
@@ -129,7 +117,7 @@
         </div>
     </div>
     <div id="dev-info">
-        <p>Copyright 2021 - Alle Rechte vorbehalten | Erstellt von Pietro Cagnasso | Foto von Giacomo Gatto</p>
+        <p>Copyright 2024 - All rights reserved | Created by Pietro Cagnasso</p>
     </div>
 </body>
 

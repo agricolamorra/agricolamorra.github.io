@@ -2,12 +2,12 @@ var iSlide = 0;
 
 function prev() {
     iSlide = (iSlide - 1);
-    if (iSlide < 0) iSlide = 9;
+    if (iSlide < 0) iSlide = 10;
     showSlide(iSlide);
 }
 
 function next() {
-    iSlide = (iSlide + 1) % 10;
+    iSlide = (iSlide + 1) % 11;
     showSlide(iSlide);
 }
 
