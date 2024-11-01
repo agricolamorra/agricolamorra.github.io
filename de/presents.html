@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>Vakuum geröstete Haselnüsse - Azienda agricola Andreas Morra</title>
+    <title>Geschenkpackungen - Azienda agricola Andreas Morra</title>
 
     <link rel="stylesheet" href="../style/product.css">
     <link rel="stylesheet" href="../style/general.css">
@@ -19,32 +19,17 @@
         as="style" onload="this.rel='stylesheet'">
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="description" content="'Nocciola Piemonte IGP' aus Langhe geröstet, ausgewählt und vakuumverpackt">
+    <meta name="description" content="Geschenkpackungen von Azienda agricola Andreas Morra">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-        content="'Nocciola Piemonte IGP' der Langhe, Haselnuss, Geröstete Haselnuss, Langhe, Produkt, Typisches Produkt, Typisches Produkt der Langhe">
+        content="Nocciola Piemonte IGP“ aus der Region Langhe, Gianduia-Creme, geröstete Haselnüsse, Haselnussöl, Haselnuss-Tegole, Haselnusskekse, Haselnusskuchen, Schokolade, Langhe, Typisches Produkt aus Langhe">
     <meta name="author" content="Pietro Cagnasso">
 
     <script src="../scripts/menu.js" async></script>
-
-    <script type="application/ld+json" async>
-        {
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            "name": "Geröstete Haselnüsse",
-            "image": [
-                "../images/products/tostate.webp"
-            ],
-            "description": "'Nocciola Piemonte IGP' aus Langhe geröstet, ausgewählt und vakuumverpackt",
-            "brand": {
-                "@type": "Brand",
-                "name": "Azienda agricola Andreas Morra"
-            }
-        }
-    </script>
+    <script src="../scripts/presents.js" async></script>
 </head>
 
-<body>
+<body onload="window.setTimeout(function(){changeSlide(1000, 0);}, 0);">
     <div id="menu-page">
         <div id="close-btn" onclick="closeMenu()"><img id="close-img" loading="lazy"
                 src="../images/icons/close-black.webp" alt="closing button"></div>
@@ -75,36 +60,35 @@
         <a id="home" href="./homepage.html"><img id="home-img" loading="lazy"
                 src="../images/logo/logo-white-no-words.webp" alt="logo Azienda agricola Andreas Morra"></a>
         <div class="lang-selector">
-            <a class="language" href="../it/tostate.html"><img class="language-img" loading="lazy"
+            <a class="language" href="../it/olio.html"><img class="language-img" loading="lazy"
                     src="../images/icons/it-white.webp" alt="italian language"></a>
-            <a class="language" href="../en/tostate.html"><img class="language-img" loading="lazy"
+            <a class="language" href="../en/olio.html"><img class="language-img" loading="lazy"
                     src="../images/icons/en-white.webp" alt="english language"></a>
         </div>
         <div id="title-container">
-            <p id="title">GERÖSTETE HASELNÜSSE</p>
+            <p id="title">GESCHENKPACKUNGEN</p>
         </div>
     </div>
     <div id="container">
-        <p class="breadcrumb"><a class="link" href="./homepage.html">Homepage</a> &middot; <a class="link"
-                href="./products.html">Produkte</a> &middot; <b>Geröstete Haselnüsse</b></p>
+        <p class="breadcrumb"><a class="link" href="./homepage.html">Homepage</a> &middot; <b>Geschenkpackungen</b></p>
         <hr class="divider">
-        <div id="content">
-            <div id="image">
-                <img id="photo" loading="lazy" src="../images/products/tostate.webp"
-                    alt="roasted hazelnuts Azienda agricola Andreas Morra">
-            </div>
-            <div id="description">
-                <p>
-                    Ausgewählte 'Nocciola Pimeonte IGP' aus den Langhe, von gleicher Größe und leicht geröstet, um das
-                    typische Aroma und den Geschmack der Region zu erhalten.<br><br> ZUTATEN: <br> 100% "<b>Nocciola</b>
-                    Piemonte IGP" aus den Langhe.
-                    <br><br>NETTOGEWICHT: <br> Vakuumverpackte Packung von <b>1 kg</b><br> Vakuumverpackte Packung von
-                    <b>200 g</b>.
-                </p>
-                <a id="contattaci" style="text-decoration: none;" href="./presents.html">
-                    <p id="contattaci-text">Schauen Sie sich unsere Geschenkverpackungen an!</p>
-                </a>
-            </div>
+        <div id="description">
+            <p>
+                Möchten Sie unsere Köstlichkeiten mit Freunden, Kollegen und Familie teilen? Auf Anfrage <b>bereiten wir
+                    wunderschöne Geschenkverpackungen</b> für jeden Anlass vor. Ob Sie ein Firmenpräsent, eine leckere
+                Aufmerksamkeit zum Geburtstag eines Freundes oder ein Weihnachtsgeschenk möchten, wir stehen Ihnen zur
+                Verfügung, um die perfekte Geschenkverpackung zu kreieren. Zögern Sie nicht, uns zu kontaktieren!
+            </p>
+            <a id="contattaci" style="text-decoration: none;" href="./contacts.html">
+                <p id="contattaci-text">Klicken Sie hier, um uns zu kontaktieren!</p>
+            </a>
+        </div>
+        <div id="slideshow">
+            <img class="slide" loading="lazy" src="../images/presents/present1.webp" alt="Geschenkpackungen 1">
+            <img class="slide" loading="lazy" src="../images/presents/present2.webp" alt="Geschenkpackungen 2">
+            <img class="slide" loading="lazy" src="../images/presents/present3.webp" alt="Geschenkpackungen 3">
+            <img class="slide" loading="lazy" src="../images/presents/present4.webp" alt="Geschenkpackungen 4">
+            <img class="slide" loading="lazy" src="../images/presents/present5.webp" alt="Geschenkpackungen 5">
         </div>
     </div>
     <hr class="divider">
@@ -129,7 +113,7 @@
         </div>
     </div>
     <div id="dev-info">
-        <p>Copyright 2021 - Alle Rechte vorbehalten | Erstellt von Pietro Cagnasso | Foto von Giacomo Gatto</p>
+        <p>Copyright 2021 - Alle Rechte vorbehalten | Erstellt von Pietro Cagnasso</p>
     </div>
 </body>
 
